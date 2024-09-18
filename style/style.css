@@ -1,0 +1,147 @@
+/*----------- СБРОС СТИЛЕЙ ----------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------- MAIN ---------*/
+
+.main__section {
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    text-align: center; 
+}
+
+.video__bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.main__title-container {
+    margin-bottom: 20px; 
+    overflow-x: auto;
+}
+
+.main__title {
+    font-size: 6rem; 
+    color: white;
+    text-shadow: 3px -4px 5px pink;
+}
+
+.main__title-text {
+    font-size: 3rem; 
+    color: white;
+    font-style: italic;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative; 
+    width: 700px; 
+    height: 700px; 
+    align-items: flex-start;
+}
+
+.btn {
+    background: white; 
+    border: none;
+    padding: 20px;
+    margin: 20px; 
+    font: inherit; 
+    color: inherit; 
+    cursor: pointer;
+    outline: 2px solid pink; 
+    border-radius: 10px;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.agree__btn {
+    position: absolute; 
+    margin-right: 300px;
+}
+
+.no__btn {
+    margin-left: 300px;
+}
+
+.response-container {
+    position: absolute;
+    text-align: center; 
+    margin-top: 200px; 
+    font-size: 4rem; 
+    color: white; 
+}
+
+.btn:hover {
+    background-color: pink;
+    color: white;
+    outline: 2px solid white;
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(20px, -20px); }
+    50% { transform: translate(-20px, 20px); }
+    75% { transform: translate(20px, 20px); }
+    100% { transform: translate(0, 0); }
+}
