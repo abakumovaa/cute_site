@@ -132,6 +132,14 @@ a {
     color: white; 
 }
 
+.response-container-2 {
+  position: absolute;
+  text-align: center; 
+  margin-top: 240px; 
+  font-size: 4rem; 
+  color: white; 
+}
+
 .btn:hover {
     background-color: pink;
     color: white;
