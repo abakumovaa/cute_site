@@ -17,6 +17,13 @@ function showResponse() {
    }, 2000);
 }
 
+function showResponseYes() {
+   responseContainer_yes.style.display = 'block';
+   setTimeout(() => {
+       responseContainer_yes.style.display = 'none'; 
+   }, 2000);
+}
+
 noBtn.addEventListener('click', () => {
    showResponse(); 
 });
@@ -40,5 +47,5 @@ const agreeBtn = document.querySelector('.agree__btn');
    agreeBtn.addEventListener('mouseover', moveButton);
 
 agreeBtn.addEventListener('click', () => {
-   showResponse(); 
+   showResponseYes(); 
 });
