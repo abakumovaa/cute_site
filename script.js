@@ -1,5 +1,6 @@
 const noBtn = document.querySelector('.no__btn');
 const responseContainer = document.querySelector('.response-container');
+const responseContainer_yes = document.querySelector('.response-container-2');
 
 noBtn.addEventListener('mouseover', () => {
 noBtn.style.animation = 'move 0.5s infinite alternate';
@@ -37,3 +38,7 @@ const agreeBtn = document.querySelector('.agree__btn');
    }
 
    agreeBtn.addEventListener('mouseover', moveButton);
+
+agreeBtn.addEventListener('click', () => {
+   showResponse(); 
+});
